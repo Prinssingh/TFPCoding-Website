@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import MenuItems from "./MenuItems";
 import MobileMenuItems from "./MobileMenuItems";
 
-export default function Header({ menuFormat, isLoggedIn, email }) {
+export default function FservicesHeader({ menuFormat, isLoggedIn, email }) {
   // const { menuFormat } = props;
   const [isVisible, setIsVisible] = useState(false);
   const [offCanvasOpen, setOffCanvasOpen] = useState(false);
@@ -40,8 +40,8 @@ export default function Header({ menuFormat, isLoggedIn, email }) {
                 <div className="col-xl-8 col-lg-8 col-md-5 col-sm-4">
                   <div className="it-header-2-top-left">
                     <ul className="text-center text-sm-start">
-                      <li className="d-none d-lg-inline-block">
-                        <Link to="tel:568367-987-237">
+                      <li className="d-none d-lg-inline-block"  style={{paddingTop:"4px"}}>
+                        <Link to="tel:+91 9074644022">
                           <span>
                             <svg
                               width="20"
@@ -74,8 +74,9 @@ export default function Header({ menuFormat, isLoggedIn, email }) {
                           +91 9074644022
                         </Link>
                       </li>
-                      <li>
-                        <a href="codingclassestfp@gmail.com">
+
+                      <li  style={{paddingTop:"4px"}}>
+                        <a href="codingclassestfp@gmail.com" >
                           <span>
                             <svg
                               width="20"
@@ -93,8 +94,9 @@ export default function Header({ menuFormat, isLoggedIn, email }) {
                           codingclassestfp@gmail.com 
                         </a>
                       </li>
-                      <li className="d-none d-xl-inline-block">
-                        <a href="#">
+
+                      <li className="d-none d-xl-inline-block" style={{marginTop:"8px"}}>
+                        <a>
                           <span>
                             <svg
                               width="24"
@@ -113,9 +115,10 @@ export default function Header({ menuFormat, isLoggedIn, email }) {
                               />
                             </svg>
                           </span>
-                          Behind BJP Office Bharahut Nagar Satna(M.P.)
+                          <div style={{marginTop:"8px"}}>Behind BJP Office Bharahut Nagar Satna(M.P.)</div>
                         </a>
                       </li>
+
                     </ul>
                   </div>
                 </div>
@@ -141,9 +144,11 @@ export default function Header({ menuFormat, isLoggedIn, email }) {
                           <i class="fa-brands fa-linkedin-in"></i>
                           </a>
 
-                          <a href="#" style={{fontSize: '16px' }}>
+                          <a href="https://wa.me/9074644022" style={{fontSize: '16px' }}>
                             <i class="fa-brands fa-whatsapp"></i>
                           </a>
+                         
+                       
 
 
                         </div>
@@ -286,23 +291,18 @@ export default function Header({ menuFormat, isLoggedIn, email }) {
           <div className="itoffcanvas__logo">
             <Link to="/">
               <img
-                src="/img/logo/logo-white.png"
+                src="\img\logo\tfp_logo_white.png"
                 alt=""
-                width={157}
-                height={42}
+                width={60}
+                height={20}
               />
-              <img
-                src="/assets/img/logo/logo-white.png"
-                alt=""
-                width={157}
-                height={42}
-              />
+             
             </Link>
           </div>
           <div className="itoffcanvas__text">
             <p>
-              Suspendisse interdum consectetur libero id. Fermentum leo vel orci
-              porta non. Euismod viverra nibh cras pulvinar suspen.
+              {/* Suspendisse interdum consectetur libero id. Fermentum leo vel orci
+              porta non. Euismod viverra nibh cras pulvinar suspen. */}
             </p>
           </div>
           <div className="it-menu-mobile">
@@ -318,7 +318,7 @@ export default function Header({ menuFormat, isLoggedIn, email }) {
               </div>
               <div className="itoffcanvas__info-address">
                 <span>Email</span>
-                <Link to="maito:hello@yourmail.com">hello@yourmail.com</Link>
+                <Link to="maito:codingclassestfp@gmail.com ">codingclassestfp@gmail.com </Link>
               </div>
             </div>
             <div className="it-info-wrapper mb-20 d-flex align-items-center">
@@ -329,7 +329,7 @@ export default function Header({ menuFormat, isLoggedIn, email }) {
               </div>
               <div className="itoffcanvas__info-address">
                 <span>Phone</span>
-                <a href="tel:9074644022">9074644022</a>
+                <a href="tel:9074644022">+91 9074644022</a>
               </div>
             </div>
             <div className="it-info-wrapper mb-20 d-flex align-items-center">
@@ -344,7 +344,7 @@ export default function Header({ menuFormat, isLoggedIn, email }) {
                   to="htits://www.google.com/maps/@37.4801311,22.8928877,3z"
                   target="_blank"
                 >
-                  Riverside 255, San Francisco, USA{" "}
+                  Behind BJP Office Bharahut Nagar Satna(M.P.){" "}
                 </Link>
               </div>
             </div>

@@ -37,7 +37,7 @@ export default function HeaderTwo({ menuFormat, isLoggedIn, email }) {
                 <div className="it-header-2-top-left">
                   <ul className="text-center text-sm-start">
                     <li className="d-none d-xl-inline-block">
-                      <a href="tel:(00)8757845682">
+                      <a href="tel:+91 9074644022">
                         <span>
                           <i className="fa-light fa-phone-volume"></i>
                         </span>
@@ -45,19 +45,20 @@ export default function HeaderTwo({ menuFormat, isLoggedIn, email }) {
                       </a>
                     </li>
                     <li className="d-none d-xl-inline-block">
-                      <a href="mailto:pacargoinfo@gmail.com">
+                      <a href="mailto:codingclassestfp@gmail.com">
                         <span>
                           <i className="fa-light fa-envelope-open-text"></i>
                         </span>
-                        codingclassestfp@gmail.com 
+                        <div style={{marginTop:"4px"}}> codingclassestfp@gmail.com </div>
                       </a>
                     </li>
-                    <li>
-                      <a href="#">
+                    <li style={{marginTop:"8px"}}>
+                      <a href="">
                         <span>
                           <i className="fal fa-map-marker-alt"></i>
                         </span>{" "}
-                        Behind BJP Office Bharahut Nagar Satna(M.P.)
+                        <div style={{marginTop:"4px"}}>Behind BJP Office Bharahut Nagar Satna(M.P.)</div>
+                        
                       </a>
                     </li>
                   </ul>
@@ -69,9 +70,8 @@ export default function HeaderTwo({ menuFormat, isLoggedIn, email }) {
                     <ul>
                       <li>
                         <div className="it-header-2-top-right-text d-none d-md-block">
-                          <a href="#">Help /</a>
-                          <a href="#">support</a>
-                          <a href="#">/ contact</a>
+                          <Link to="/contact">Help |</Link>
+                          <Link to="/contact"> support </Link>
                         </div>
                       </li>
                       <li>
@@ -92,7 +92,7 @@ export default function HeaderTwo({ menuFormat, isLoggedIn, email }) {
                           <i class="fa-brands fa-linkedin-in"></i>
                           </a>
 
-                          <a href="#" style={{fontSize: '16px' }}>
+                          <a href="https://wa.me/9074644022" style={{fontSize: '16px' }}>
                             <i class="fa-brands fa-whatsapp"></i>
                           </a>
 
@@ -119,12 +119,12 @@ export default function HeaderTwo({ menuFormat, isLoggedIn, email }) {
                 <div className="col-xl-2 col-6">
                   <div className="it-header-5-logo">
                     <Link to="/">
-                      <img
-                        src="\img\logo\tfp_logo.png"
-                        alt=""
-                        width={75}
-                        height={40}
-                      />
+                    <img
+                            src="\img\logo\tfp_logo.png"
+                            alt=""
+                            width={71}
+                            height={30}
+                          />
                     </Link>
                   </div>
                 </div>
@@ -236,17 +236,17 @@ export default function HeaderTwo({ menuFormat, isLoggedIn, email }) {
           <div className="itoffcanvas__logo">
             <Link to="/">
               <img
-                src="/img/logo/logo-white.png"
+                src="/img/logo/tfp_logo_white.png"
                 alt=""
-                width={157}
-                height={42}
+                width={60}
+                height={20}
               />
             </Link>
           </div>
           <div className="itoffcanvas__text">
             <p>
-              Suspendisse interdum consectetur libero id. Fermentum leo vel orci
-              porta non. Euismod viverra nibh cras pulvinar suspen.
+              {/* Suspendisse interdum consectetur libero id. Fermentum leo vel orci
+              porta non. Euismod viverra nibh cras pulvinar suspen. */}
             </p>
           </div>
           <div className="it-menu-mobile">
@@ -262,7 +262,7 @@ export default function HeaderTwo({ menuFormat, isLoggedIn, email }) {
               </div>
               <div className="itoffcanvas__info-address">
                 <span>Email</span>
-                <a href="maito:hello@yourmail.com">hello@yourmail.com</a>
+                <a href="maito:codingclassestfp@gmail.com">codingclassestfp@gmail.com</a>
               </div>
             </div>
             <div className="it-info-wrapper mb-20 d-flex align-items-center">
@@ -273,7 +273,7 @@ export default function HeaderTwo({ menuFormat, isLoggedIn, email }) {
               </div>
               <div className="itoffcanvas__info-address">
                 <span>Phone</span>
-                <a href="tel:(00)45611227890">(00) 456 1122 7890</a>
+                <a href="tel:+91 9074644022">+91 9074644022</a>
               </div>
             </div>
             <div className="it-info-wrapper mb-20 d-flex align-items-center">
@@ -288,7 +288,7 @@ export default function HeaderTwo({ menuFormat, isLoggedIn, email }) {
                   to="htits://www.google.com/maps/@37.4801311,22.8928877,3z"
                   target="_blank"
                 >
-                  Riverside 255, San Francisco, USA{" "}
+                 Behind BJP Office Bharahut Nagar Satna(M.P.){" "}
                 </Link>
               </div>
             </div>

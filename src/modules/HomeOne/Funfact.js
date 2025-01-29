@@ -15,10 +15,10 @@ export default function Funfact() {
             countNum: 15,
             countTitle: 'Classes Completed',
             countIcon: 'flaticon-completed-task',
-			postfix: 'k+'
+			postfix: '+'
         },
         {
-            countNum: 97,
+            countNum: 96,
             countTitle: 'Satisfaction Rate',
             countIcon: 'flaticon-customer-review',
 			postfix: '%'
@@ -27,13 +27,13 @@ export default function Funfact() {
             countNum : 5,
             countTitle: 'Students Community',
             countIcon: 'flaticon-class',
-			postfix: 'k+'
+			postfix: '+'
         }
 
     ];
 
 	return (
-		<div className="it-funfact-area z-index-5">
+		<div className="it-funfact-area z-index-5" id="statics">
 			<div className="container">
 				<div className="it-funfact-bg-wrap theme-bg">
 					{/* <img src="/img/funfact/funfact-bg.png" fill={true} alt="" /> */}

@@ -19,7 +19,7 @@ export default function Newsletter() {
 				<div className="row">
 					<div className="col-xl-6 col-lg-6 col-md-6">
 						<div className="it-newsletter-left">
-							<h4 className="it-section-title text-white pb-20">Join Our TFPCoding</h4>
+							<h4 className="it-section-title text-white pb-20">Join Our TFPCoding Community</h4>
 							{/* <span>Subscribe our newsletter to get our latest update & news.</span> */}
 						</div>
 					</div>

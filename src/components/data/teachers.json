@@ -2,35 +2,38 @@
   {
     "id": 1,
     "slug": "teacher-one",
-    "name": "Nathan Allen",
+    "name": "Prins Singh",
     "designation": "Teacher",
     "bio": "Tempor orci dapibus ultrices in iaculis nunc sed augue. Feugiat in ante metus dictum at tempor commodo. Venenatis lectus magna fringilla urna porttitor rhoncus dolor.",
     "image": "/img/team/team-3-1.jpg",
-    "email": "nathan.allen@gmail.com",
-    "phone": "+9870123456789",
-    "address": "Hudson, Wisconsin(WI), 54016"
+    "email": "prinssingh7448@gmail.com",
+    "phone": "+91 9981282308",
+    "address": "Uttali Satna MP",
+    "linkedIn":""
   },
   {
     "id": 2,
     "slug": "teacher-two",
-    "name": "Esther Boyd",
+    "name": "Shubham Singh",
     "designation": "Teacher",
     "bio": "Tempor orci dapibus ultrices in iaculis nunc sed augue. Feugiat in ante metus dictum at tempor commodo. Venenatis lectus magna fringilla urna porttitor rhoncus dolor.",
     "image": "/img/team/team-3-2.jpg",
-    "email": "esther.boyd@gmail.com",
-    "phone": "+9870123456789",
-    "address": "Hudson, Wisconsin(WI), 54016"
+    "email": "shubhamsatnagmail.com",
+    "phone": "+91 9074644022",
+    "address": "Uttali Satna MP",
+    "linkedIn":""
   },
   {
     "id": 3,
     "slug": "teacher-three",
-    "name": "Jamie Keller",
-    "designation": "Teacher",
+    "name": "MD Afroz Khan ",
+    "designation": "Marketing Expert",
     "bio": "Tempor orci dapibus ultrices in iaculis nunc sed augue. Feugiat in ante metus dictum at tempor commodo. Venenatis lectus magna fringilla urna porttitor rhoncus dolor.",
     "image": "/img/team/team-3-3.jpg",
     "email": "jamie.keller@gmail.com",
     "phone": "+9870123456789",
-    "address": "Hudson, Wisconsin(WI), 54016"
+    "address": "Bhopal, Wisconsin(WI), 54016",
+    "linkedIn":""
   },
   {
     "id": 4,
@@ -41,94 +44,8 @@
     "image": "/img/team/team-3-4.jpg",
     "email": "jesus.pendley1@gmail.com",
     "phone": "+9870123456789",
-    "address": "Hudson, Wisconsin(WI), 54016"
-  },
-  {
-    "id": 5,
-    "slug": "teacher-five",
-    "name": "Melvin Warner",
-    "designation": "Teacher",
-    "bio": "Tempor orci dapibus ultrices in iaculis nunc sed augue. Feugiat in ante metus dictum at tempor commodo. Venenatis lectus magna fringilla urna porttitor rhoncus dolor.",
-    "image": "/img/team/team-1-5.jpg",
-    "email": "melvin.warner@gmail.com",
-    "phone": "+9870123456789",
-    "address": "Hudson, Wisconsin(WI), 54016"
-  },
-  {
-    "id": 6,
-    "slug": "teacher-six",
-    "name": "Nancy Dickens",
-    "designation": "Teacher",
-    "bio": "Tempor orci dapibus ultrices in iaculis nunc sed augue. Feugiat in ante metus dictum at tempor commodo. Venenatis lectus magna fringilla urna porttitor rhoncus dolor.",
-    "image": "/img/team/team-1-6.jpg",
-    "email": "nancy.dickens@gmail.com",
-    "phone": "+9870123456789",
-    "address": "Hudson, Wisconsin(WI), 54016"
-  },
-  {
-    "id": 7,
-    "slug": "teacher-seven",
-    "name": "Harriet Graham",
-    "designation": "Teacher",
-    "bio": "Tempor orci dapibus ultrices in iaculis nunc sed augue. Feugiat in ante metus dictum at tempor commodo. Venenatis lectus magna fringilla urna porttitor rhoncus dolor.",
-    "image": "/img/team/team-1-7.jpg",
-    "email": "harriet.graham@gmail.com",
-    "phone": "+9870123456789",
-    "address": "Hudson, Wisconsin(WI), 54016"
-  },
-  {
-    "id": 8,
-    "slug": "teacher-eight",
-    "name": "Ernest Dustin",
-    "designation": "Teacher",
-    "bio": "Tempor orci dapibus ultrices in iaculis nunc sed augue. Feugiat in ante metus dictum at tempor commodo. Venenatis lectus magna fringilla urna porttitor rhoncus dolor.",
-    "image": "/img/team/team-1-8.jpg",
-    "email": "ernest.dustin1@gmail.com",
-    "phone": "+9870123456789",
-    "address": "Hudson, Wisconsin(WI), 54016"
-  },
-  {
-    "id": 9,
-    "slug": "teacher-nine",
-    "name": "Jesus Pendley Jr.",
-    "designation": "Teacher",
-    "bio": "Tempor orci dapibus ultrices in iaculis nunc sed augue. Feugiat in ante metus dictum at tempor commodo. Venenatis lectus magna fringilla urna porttitor rhoncus dolor.",
-    "image": "/img/team/team-1-1.png",
-    "email": "jesus.pendley2@gmail.com",
-    "phone": "+9870123456789",
-    "address": "Hudson, Wisconsin(WI), 54016"
-  },
-  {
-    "id": 10,
-    "slug": "teacher-ten",
-    "name": "Ernest Dustin II",
-    "designation": "Teacher",
-    "bio": "Tempor orci dapibus ultrices in iaculis nunc sed augue. Feugiat in ante metus dictum at tempor commodo. Venenatis lectus magna fringilla urna porttitor rhoncus dolor.",
-    "image": "/img/team/team-1-2.png",
-    "email": "ernest.dustin2@gmail.com",
-    "phone": "+9870123456789",
-    "address": "Hudson, Wisconsin(WI), 54016"
-  },
-  {
-    "id": 11,
-    "slug": "teacher-eleven",
-    "name": "Melvin Warner Jr.",
-    "designation": "Teacher",
-    "bio": "Tempor orci dapibus ultrices in iaculis nunc sed augue. Feugiat in ante metus dictum at tempor commodo. Venenatis lectus magna fringilla urna porttitor rhoncus dolor.",
-    "image": "/img/team/team-1-3.png",
-    "email": "melvin.warner2@gmail.com",
-    "phone": "+9870123456789",
-    "address": "Hudson, Wisconsin(WI), 54016"
-  },
-  {
-    "id": 12,
-    "slug": "teacher-twelve",
-    "name": "Jamie Keller II",
-    "designation": "Teacher",
-    "bio": "Tempor orci dapibus ultrices in iaculis nunc sed augue. Feugiat in ante metus dictum at tempor commodo. Venenatis lectus magna fringilla urna porttitor rhoncus dolor.",
-    "image": "/img/team/team-1-4.png",
-    "email": "jamie.keller2@gmail.com",
-    "phone": "+9870123456789",
-    "address": "Hudson, Wisconsin(WI), 54016"
+    "address": "Hudson, Wisconsin(WI), 54016",
+    "linkedIn":""
   }
+  
 ]

@@ -64,8 +64,8 @@ export default function Career() {
 						<div className="it-career-item p-relative fix">
 							<div className="it-career-content">
 								<span>Start from today</span>
-								<p>Join our training courses & <br />
-								Build your skill.</p>
+								<p>Join Internship Program & <br />
+								Build your career.</p>
 								<a className="it-btn black-bg mr-15" href="/contact">
 									<span>
 										Join now 

@@ -39,11 +39,11 @@ export default function CourseDetailsArea({item}) {
 									(4.7)
 								</span>
 							</div>
-							<h4 className="it-evn-details-title mb-0 pb-5">{title ?  title : "Web Development Fully Complete Guideline"}</h4>
+							<h4 className="it-evn-details-title mb-0 pb-5">{title ?  title : "No Course Title"}</h4>
 							<div className="postbox__meta">
-								<span><i className="fa-light fa-file-invoice"></i>Lesson {lessonCount ? lessonCount : "10"}</span>
-								<span><i className="fa-light fa-clock"></i>{classTime ? classTime : "9.00AM- 01.00 PM"}</span>
-								<span><i className="fa-light fa-user"></i>Students {studentCount ? studentCount : "20"}+</span>
+								<span><i className="fa-light fa-file-invoice"></i>Lesson {lessonCount ? lessonCount : "100+"}</span>
+								<span><i className="fa-light fa-clock"></i>{classTime ? classTime : "07.00AM- 09.00 PM"}</span>
+								<span><i className="fa-light fa-user"></i>Students {studentCount ? studentCount : "100+"}+</span>
 							</div>
 							<div className="it-course-details-nav pb-60">
 								<nav>
@@ -91,6 +91,7 @@ export default function CourseDetailsArea({item}) {
 											</div>
 										</div>
 									</TabPanel>
+									
 									<TabPanel>
 										<div className="it-course-details-wrapper">
 											<div className="it-evn-details-text mb-40">
@@ -113,7 +114,7 @@ export default function CourseDetailsArea({item}) {
 											</div>
 											<div className="it-evn-details-text">
 												<h6 className="it-evn-details-title-sm pb-5">What Will I Learn From This Course?</h6>
-												<p>Himenaeos. Vestibulum sollicitudin varius mauris non dignissim. Sed quis iaculis
+												<p>vvvHimenaeos. Vestibulum sollicitudin varius mauris non dignissim. Sed quis iaculis
 												est. Nulla quam neque,
 												interdum vitae fermentum lacinia, interdum eu magna. Mauris non posuere tellus.
 												Donec quis euismod
@@ -125,11 +126,12 @@ export default function CourseDetailsArea({item}) {
 											</div>
 										</div>
 									</TabPanel>
+									
 									<TabPanel>
 										<div className="it-course-details-wrapper">
 											<div className="it-evn-details-text mb-40">
 												<h6 className="it-evn-details-title-sm pb-5">Course Description</h6>
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+												<p>ccccLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 												incididunt ut labore et dolore
 												magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
 												nisi ut aliquip ex ea
@@ -147,7 +149,7 @@ export default function CourseDetailsArea({item}) {
 											</div>
 											<div className="it-evn-details-text">
 												<h6 className="it-evn-details-title-sm pb-5">What Will I Learn From This Course?</h6>
-												<p>Himenaeos. Vestibulum sollicitudin varius mauris non dignissim. Sed quis iaculis
+												<p>ccvbcvbcvbHimenaeos. Vestibulum sollicitudin varius mauris non dignissim. Sed quis iaculis
 												est. Nulla quam neque,
 												interdum vitae fermentum lacinia, interdum eu magna. Mauris non posuere tellus.
 												Donec quis euismod
@@ -159,11 +161,12 @@ export default function CourseDetailsArea({item}) {
 											</div>
 										</div>
 									</TabPanel>
+									
 									<TabPanel>
 										<div className="it-course-details-wrapper">
 											<div className="it-evn-details-text mb-40">
 												<h6 className="it-evn-details-title-sm pb-5">Course Description</h6>
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+												<p>cvbcvbcvbLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 												incididunt ut labore et dolore
 												magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
 												nisi ut aliquip ex ea
@@ -206,12 +209,12 @@ export default function CourseDetailsArea({item}) {
 								{/* <div className="it-course-sidebar-rate d-flex justify-content-between align-items-center">
 									<span>course fee</span>
 									<span className="rate">${prevPrice ? prevPrice : "60"} <i>${price ? price : "120"}</i></span>
-								</div> */}
-								{/* <i>29-day money-back guarantee</i> */}
+								</div>  */}
+								 <i>29-day money-back guarantee</i>
 							</div>
-							{/* <button className="it-btn w-100 text-center mb-20" onClick={() => handleCart(id)}>
+							<button className="it-btn w-100 text-center mb-20" onClick={() => handleCart(id)}>
 								<span>
-									Buy Ticket
+									Join Course
 									<svg width="17" height="14" viewBox="0 0 17 14" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
 										<path d="M11 1.24023L16 7.24023L11 13.2402" stroke="currentcolor" strokeWidth="1.5"
@@ -220,11 +223,11 @@ export default function CourseDetailsArea({item}) {
 											strokeLinecap="round" strokeLinejoin="round" />
 									</svg>
 								</span>
-							</button> */}
+							</button>
 							<div className="it-evn-sidebar-list">
 								<ul>
-									<li><span>{classTime ? classTime : "4:00 pm 6:00 pm"} </span> <span>start date</span></li>
-									{/* <li><span>enrolled</span><span>{studentCount ? studentCount : "100"}</span></li> */}
+									<li><span>{classTime ? classTime : "07:00 am 09:00 pm"} </span> <span>start date</span></li>
+									<li><span>enrolled</span><span>{studentCount ? studentCount : "100"}</span></li> 
 									<li><span>lectures</span><span>{totalLecture ? totalLecture: "80"}</span></li>
 									<li><span>skill level</span><span>{skillLevel ? skillLevel : "Basic"}</span></li>
 									<li><span>class day</span><span>{classDay ? classDay : "Monday-friday"}</span></li>

@@ -17,7 +17,7 @@ export default function CourseArea() {
 									Slug={course.slug}
 									Title={course.title}
 									Img={course.image}
-									category={course.category}
+									Category={course.category}
 									ratingCount={course.ratingCount} 
 									lessonCount={course.lessonCount}
 									studentCount={course.studentCount}
@@ -40,7 +40,7 @@ export default function CourseArea() {
 									Slug={course.slug}
 									Title={course.title}
 									Img={course.image}
-									category={course.category}
+									Category={course.category}
 									ratingCount={course.ratingCount} 
 									lessonCount={course.lessonCount}
 									studentCount={course.studentCount}
@@ -52,7 +52,7 @@ export default function CourseArea() {
 								/>
 							</div>
 						);
-					}).slice(9, 12)
+					}).slice(3, 6)
 				}
 				</div>
 			</div>

@@ -68,7 +68,7 @@ export default function Sidebar() {
 										</div>
 									</div>
 								);
-							}).slice(6, 12)
+							}).slice(0, 6)
 						}
 						
 					</div>

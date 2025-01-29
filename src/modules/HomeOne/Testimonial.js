@@ -57,25 +57,25 @@ const Testimonial = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Courtney Henry",
-      role: "STUDENT",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      name: "Aman Singh Parihar",
+      role: "FRONTEND ENGG.",
+      text: "My career has taken a complete turn thanks to TFPCoding Classes. I knew nothing about web development before starting, and was guided expertly through the instructors to learn these concepts well, including advanced topics like React. The practical aspects of a course and individual mentoring helped me with interviews, and today I am happily placed with one of the reputed MNC’s. You are the TFP, thank you for letting me fulfill my dreams!",
       info: "Completed 5 courses • 4.8 average rating",
       images: ["/placeholder.svg?height=80&width=80"],
     },
     {
       id: 2,
-      name: "Alex Johnson",
+      name: "Vidhi Agrawal",
       role: "PROFESSIONAL",
-      text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      text: "TFPCoding Classes changed my life when I learned Java and Android App Development. I would highly recommend WORK Sandesh as a self-paced online course that provides structured learning, hands-on experience, and continuous guidance from trainers, all of which made even the most challenging concepts easy to grasp. Now, I am successfully placed into an MNC and I would like to thank the TFPCoding Classes team for my success. A must for anyone seeking success at tech!",
       info: "Career changed after 3 courses • Now a Senior Developer",
       images: ["/placeholder.svg?height=80&width=80"],
     },
     {
       id: 3,
-      name: "Sarah Lee",
-      role: "ENTREPRENEUR",
-      text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      name: "Himanshu Kushwaha",
+      role: "MERN Stack Developer",
+      text: "TFPCoding Classes changed my life when I learned Java and Android App Development. I would highly recommend WORK Sandesh as a self-paced online course that provides structured learning, hands-on experience, and continuous guidance from trainers, all of which made even the most challenging concepts easy to grasp. Now, I am successfully placed into an MNC and I would like to thank the TFPCoding Classes team for my success. A must for anyone seeking success at tech!",
       info: "Started a tech company • Credits our courses for success",
       images: ["/placeholder.svg?height=80&width=80"],
     },
@@ -117,12 +117,12 @@ const Testimonial = () => {
                     Learners.
                     <svg
                       className="title-shape-3"
-                      width="200"
+                      width="250"
                       height="65"
-                      viewBox="0 0 169 65"
+                      viewBox="0 0 230 70"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      style={{top:"50%", right:"5%"}}
+                      style={{top:"50%", left:"-10%"}}
                     >
                       <path
                         d="M73.9865 8.52241C79.0935 6.03398 83.1809 4.26476 89.5018 3.31494C94.8148 2.51659 100.239 2.08052 105.59 1.95274C121.035 1.5839 135.743 4.94481 147.12 9.7789C159.246 14.931 167.348 22.7171 166.701 31.8511C165.923 42.8363 151.983 52.0035 134.146 57.1364C110.893 63.8284 82.3457 64.1305 59.197 61.1289C38.1374 58.3982 12.2599 51.9446 4.20444 40.1836C-2.8133 29.9382 12.6851 18.2085 28.1538 11.6691C40.9733 6.24978 56.315 2.97602 71.4123 4.09034C82.5481 4.91227 93.8269 6.91079 103.074 10.0494C113.489 13.5844 120.759 18.7016 128.482 23.7722"
@@ -243,13 +243,13 @@ const Testimonial = () => {
                   
                   <div
                     key={testimonial.id}
-                    style={{ flex: "0 0 100%", Width: "100%" }}
+                    style={{ flex: "0 0 100%", Width: "100%", background:"#1a2942" }}
                   >
                     <SingleTestimonial
-                      authorName={testimonial.title}
-                      authorImg={testimonial.img}
-                      designation={testimonial.designation}
-                      description={testimonial.description}
+                      authorName={testimonial.name}
+                      authorImg={testimonial.images[0]}
+                      designation={testimonial.role}
+                      description={testimonial.text}
                     />
                   </div>
                 );

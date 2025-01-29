@@ -19,6 +19,7 @@ export default function CourseDetails() {
     //     return course.slug === courseSlug;
     // });
 
+	
 	const { slug } = useParams();
 
 	const singleCourse = Courses.filter((Course) => Course.slug === slug);

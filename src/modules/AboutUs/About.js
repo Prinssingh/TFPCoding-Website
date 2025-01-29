@@ -22,12 +22,9 @@ export default function About() {
 								<img src="/img/category/inner.svg" alt="" width={18} height={18} />
 								about us
 							</span>
-							<h2 className="it-section-title-3 pb-30">we are always ensure best
-								course for your <span>learning</span>
+							<h2 className="it-section-title-3 pb-30">Empowering Your Future with Industry-<span>Leading Tech Education</span>
 							</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-								nostrud exercitation ullamco laboris nisi.</p>
+							<p>At TFP Coding Institute, we are committed to providing top-quality courses designed to equip you with the skills needed to excel in the modern tech world. Whether you're a beginner or an experienced developer, our expert-led training programs ensure you stay ahead in the competitive landscape.</p>
 						</div>
 						<div className="it-about-3-mv-box">
 							<div className="row">
@@ -37,9 +34,8 @@ export default function About() {
 											<span><i className="flaticon-video-1"></i></span>
 										</div>
 										<div className="it-about-3-mv-item">
-											<span className="it-about-3-mv-title">Sharing a Screen</span>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-												tempor incididunt ut labore et dolore magna aliqua.</p>
+											<span className="it-about-3-mv-title">Live Coding & Screen Sharing</span>
+											<p>Experience live coding sessions where instructors share their screens, guiding you step by step through complex concepts.</p>
 										</div>
 									</div>
 								</div>
@@ -49,8 +45,9 @@ export default function About() {
 											<span><i className="flaticon-puzzle"></i></span>
 										</div>
 										<div className="it-about-3-mv-item">
-											<span className="it-about-3-mv-title">presenter Control</span>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do tempor incididunt ut labore et dolore magna aliqua.</p>
+											<span className="it-about-3-mv-title">Expert Guidance & Mentorship</span>
+											<p>Get direct mentorship from experienced professionals who provide personalized feedback and support throughout your learning journey.
+</p>
 										</div>
 									</div>
 								</div>

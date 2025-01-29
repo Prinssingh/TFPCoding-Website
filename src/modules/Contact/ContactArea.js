@@ -1,16 +1,30 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Link } from 'react-router-dom';
 
 export default function ContactArea() {
 	const form = useRef();
 
+	const [formData, setFormData] = useState({
+		user_name: "",
+		user_email: "",
+		user_phone: "",
+		user_subject: "",
+		user_message: "",
+	  });
+	
+	const [errors, setErrors] = useState({});
+
+	const handleChange = (e) => {
+		setFormData({ ...formData, [e.target.name]: e.target.value });
+	  };
+
   	const sendEmail = (e) => {
     	e.preventDefault();
 
 		emailjs
-		.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-			publicKey: 'YOUR_PUBLIC_KEY',
+		.sendForm('service_mtkfjmt', 'template_k9vb0sw', form.current, {
+			publicKey: 'eCF3Z5BvNPrXxXj7d',
 		})
 		.then(
 			() => {
@@ -21,6 +35,56 @@ export default function ContactArea() {
 			},
 		);
   	};
+ // Validate form fields
+ const validateForm = () => {
+    let errors = {};
+    if (!formData.user_name.trim()) errors.user_name = "Name is required";
+    if (!formData.user_email.trim()) {
+      errors.user_email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.user_email)) {
+      errors.user_email = "Invalid email format";
+    }
+    if (!formData.user_phone.trim()) {
+      errors.user_phone = "Phone number is required";
+    } else if (!/^\d{10}$/.test(formData.user_phone)) {
+      errors.user_phone = "Invalid phone number (10 digits required)";
+    }
+    if (!formData.user_subject.trim()) errors.user_subject = "Subject is required";
+
+    setErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!validateForm()) return;
+
+    emailjs
+      .send(
+        "service_mtkfjmt", // Replace with your EmailJS service ID
+        "template_6mvhxnq", // Replace with your EmailJS template ID
+        formData,
+        "eCF3Z5BvNPrXxXj7d" // Replace with your EmailJS public key
+      )
+      .then(
+        (response) => {
+          alert("Message sent successfully!");
+          setFormData({
+            user_name: "",
+            user_email: "",
+            user_phone: "",
+            user_subject: "",
+            user_message: "",
+          });
+          setErrors({});
+        },
+        (error) => {
+          console.error("Failed to send message:", error);
+          alert("Failed to send message. Please try again later.");
+        }
+      );
+  };
 
 	return (
 		<div className="it-contact__area pt-120 pb-120">
@@ -34,8 +98,7 @@ export default function ContactArea() {
 							<div className="it-contact__right-box">
 								<div className="it-contact__section-box pb-20">
 									<h4 className="it-contact__title pb-15">Get in Touch</h4>
-									<p>Suspendisse ultrice gravida dictum fusce placerat <br />
-										ultricies integer </p>
+									<p>Have questions or want to enroll in our coding classes? <br/>Contact us today and take the first step toward your dream IT career! 🚀</p>
 								</div>
 								<div className="it-contact__content mb-55">
 									<ul>
@@ -46,8 +109,7 @@ export default function ContactArea() {
 												</div>
 												<div className="it-contact__text">
 												<span>Our Address</span>
-												<Link to="#">1564 Goosetown Drive <br />
-													Matthews, NC 28105</Link> 
+												<Link to="#">Behind BJP Office Bharahut Nagar Satna, Madhya Pradesh, India</Link> 
 												</div>
 											</div>
 										</li>
@@ -58,8 +120,8 @@ export default function ContactArea() {
 												</div>
 												<div className="it-contact__text">
 													<span>Hours of Operation</span>
-													<Link to="#">Mon - Fri: 9.00am to 5.00pm</Link>
-													<span>[2nd sat Holiday]</span>
+													<Link to="#">Mon - Fri: 07.00am to 09.00pm</Link>
+													<span>[sat-sun Holiday]</span>
 												</div>
 											</div>
 										</li>
@@ -70,8 +132,8 @@ export default function ContactArea() {
 												</div>
 												<div className="it-contact__text">
 													<span>contact</span>
-													<Link to="tel:+99358954565">+99- 35895-4565</Link>
-													<Link to="mailto:supportyou@info.com">supportyou@info.com</Link>
+													<Link to="tel:+919074644022">+91-9074644022</Link>
+													<Link to="mailto:codingclassestfp@gmail.com">codingclassestfp@gmail.com</Link>
 												</div>
 											</div>
 										</li>
@@ -79,53 +141,58 @@ export default function ContactArea() {
 								</div>
 								<div className="it-contact__bottom-box d-flex align-items-center justify-content-between">
 									<div className="it-contact__scrool smooth">
-										<Link to="#it-newsletter"><i className="fa-solid fa-arrow-down"></i>Customer Care</Link>
+										<Link to="/contact"><i className="fa-solid fa-arrow-down"></i>Customer Care</Link>
 									</div>
 									<div className="it-footer-social">
-										<Link to="#"><i className="fa-brands fa-facebook-f"></i></Link>
-										<Link to="#"><i className="fa-brands fa-instagram"></i></Link>
-										<Link to="#"><i className="fa-brands fa-pinterest-p"></i></Link>
-										<Link to="#"><i className="fa-brands fa-twitter"></i></Link>
+										<Link to="https://www.youtube.com/@TFPCodingclasses"><i className="fa-brands fa-youtube"></i></Link>
+										<Link to="https://www.instagram.com/tfpcoding/"><i className="fa-brands fa-instagram"></i></Link>
+										<Link to="https://x.com/tfpcoding"><i className="fa-brands fa-x"></i></Link>
+										<Link to="https://www.linkedin.com/company/tfpcodingclass/"><i className="fa-brands fa-linkedin-in"></i></Link>
+										<Link to="https://wa.me/9074644022"><i className="fa-brands fa-whatsapp"></i></Link>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div className="col-xl-5">
 							<div className="it-contact__form-box">
-								<form ref={form} onSubmit={sendEmail}>
+								<form onSubmit={handleSubmit}>
 									<div className="row">
 										<div className="col-12 mb-25">
 											<div className="it-contact-input-box">
 												<label>Name*</label>
-												<input type="text" placeholder="Name" name="user_name" />
+												<input type="text" placeholder="Name"  name="user_name" value={formData.user_name} onChange={handleChange} />
+												{errors.user_name && <small className="error">{errors.user_name}</small>}
 											</div>
 										</div>
 										<div className="col-12 mb-25">
 											<div className="it-contact-input-box">
 												<label>Email Address*</label>
-												<input type="email" placeholder="Email" name="user_email" />
+												<input type="email" placeholder="Email"  name="user_email" value={formData.user_email} onChange={handleChange}/>
+												{errors.user_email && <small className="error">{errors.user_email}</small>}
 											</div>
 										</div>
 										<div className="col-12 mb-25">
 											<div className="it-contact-input-box">
 												<label>Phone*</label>
-												<input type="text" placeholder="Phone" name="user_phone" />
+												<input type="tel" placeholder="Phone" name="user_phone" value={formData.user_phone} onChange={handleChange}  />
+												{errors.user_phone && <small className="error">{errors.user_phone}</small>}
 											</div>
 										</div>
 										<div className="col-12 mb-25">
 											<div className="it-contact-input-box">
 												<label>Subject*</label>
-												<input type="text" placeholder="Subject" name="user_subject" />
+												<input type="text" placeholder="Subject" name="user_subject" value={formData.user_subject} onChange={handleChange}/>
+												{errors.user_subject && <small className="error">{errors.user_subject}</small>}
 											</div>
 										</div>
 										<div className="col-12 mb-25">
 											<div className="it-contact-textarea-box">
 												<label>Message</label>
-												<textarea placeholder="Message" name="user_message"></textarea>
+												<textarea placeholder="Message" name="user_message" value={formData.user_message} onChange={handleChange}></textarea>
 											</div>
 										</div>
 									</div>
-								</form>
+								
 								<button type="submit" className="it-btn">
 									<span>
 									Send Message
@@ -138,6 +205,7 @@ export default function ContactArea() {
 										</svg>
 									</span>
 								</button>
+								</form>
 							</div>
 						</div>
 					</div>

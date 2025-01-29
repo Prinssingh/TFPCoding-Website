@@ -23,7 +23,7 @@ export default function AboutUsModules() {
 
 			<Course />
 			
-			<Team />
+			{/* <Team /> */}
 
 			<Newsletter />
 

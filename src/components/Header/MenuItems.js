@@ -18,7 +18,7 @@ export default function MenuItems(props) {
 						</li>
 					<li>
 					{/* <li className="has-dropdown"> */}
-						<Link to="/pages/services/Service">services</Link>
+						<Link to="/services">services</Link>
 						{/* <ul className="it-submenu submenu">
 							<li><Link to="/pages/services/Service">services 01</Link></li>
 							<li><Link to="/services-2">services 02</Link></li>

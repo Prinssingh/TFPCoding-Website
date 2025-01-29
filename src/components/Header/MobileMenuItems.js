@@ -55,63 +55,58 @@ export default function MobileMenuItems(props) {
 	return (
 		<>
 			{
-				onePage == 'onepage1' ?
-				<ul>
+				// onePage == 'onepage1' ?
+				// <ul>
 					
-					{onepageMobileMenuHome}
-					<li><Link to="#it-course">Course</Link></li>
-					<li><Link to="#it-about">About Us</Link></li>
-					<li><Link to="#it-team">Team</Link></li>
-					<li><Link to="#it-blog">Blog</Link></li>
-					<li><Link to="#it-newsletter">Contact</Link></li>
-				</ul> :
-				onePage == 'onepage2' ?
+				// 	{onepageMobileMenuHome}
+				// 	<li><Link to="#it-course">Course</Link></li>
+				// 	<li><Link to="#it-about">About Us</Link></li>
+				// 	<li><Link to="#it-team">Team</Link></li>
+				// 	<li><Link to="#it-blog">Blog</Link></li>
+				// 	<li><Link to="#it-newsletter">Contact</Link></li>
+				// </ul> :
+				// onePage == 'onepage2' ?
+				// <ul>
+				// 	{onepageMobileMenuHome}
+				// 	<li><Link to="#it-about">About Us</Link></li>
+				// 	<li><Link to="#it-course">Course</Link></li>
+				// 	<li><Link to="#it-contact">Contact</Link></li>
+				// 	<li><Link to="#it-event">Event</Link></li>
+				// 	<li><Link to="#it-blog">Blog</Link></li>
+				// </ul> : 
+				// onePage == 'onepage3' ?
+				// <ul>
+				// 	{onepageMobileMenuHome}
+				// 	<li><Link to="#it-about">About Us</Link></li>
+				// 	<li><Link to="#it-course">Course</Link></li>
+				// 	<li><Link to="#it-service">Services</Link></li>
+				// 	<li><Link to="#it-team">Team</Link></li>
+				// 	<li><Link to="#it-blog">Blog</Link></li>
+				// </ul> :
+				// onePage == 'onepage4' ?
+				// <ul>
+				// 	{onepageMobileMenuHome}
+				// 	<li><Link to="#it-about">About Us</Link></li>
+				// 	<li><Link to="#it-course">Course</Link></li>
+				// 	<li><Link to="#it-testimonial">Testimonial</Link></li>
+				// 	<li><Link to="#it-event">Event</Link></li>
+				// 	<li><Link to="#it-blog">Blog</Link></li>
+				// </ul> :
+				// onePage == 'onepage5' ?
+				// <ul>
+				// 	{onepageMobileMenuHome}
+				// 	<li><Link to="#it-about">About Us</Link></li>
+				// 	<li><Link to="#it-testimonial">Testimonial</Link></li>
+				// 	<li><Link to="#it-contact">Contact</Link></li>
+				// 	<li><Link to="#it-gallery">Gallery</Link></li>
+				// 	<li><Link to="#it-blog">Blog</Link></li>
+				// </ul> :
 				<ul>
-					{onepageMobileMenuHome}
-					<li><Link to="#it-about">About Us</Link></li>
-					<li><Link to="#it-course">Course</Link></li>
-					<li><Link to="#it-contact">Contact</Link></li>
-					<li><Link to="#it-event">Event</Link></li>
-					<li><Link to="#it-blog">Blog</Link></li>
-				</ul> : 
-				onePage == 'onepage3' ?
-				<ul>
-					{onepageMobileMenuHome}
-					<li><Link to="#it-about">About Us</Link></li>
-					<li><Link to="#it-course">Course</Link></li>
-					<li><Link to="#it-service">Services</Link></li>
-					<li><Link to="#it-team">Team</Link></li>
-					<li><Link to="#it-blog">Blog</Link></li>
-				</ul> :
-				onePage == 'onepage4' ?
-				<ul>
-					{onepageMobileMenuHome}
-					<li><Link to="#it-about">About Us</Link></li>
-					<li><Link to="#it-course">Course</Link></li>
-					<li><Link to="#it-testimonial">Testimonial</Link></li>
-					<li><Link to="#it-event">Event</Link></li>
-					<li><Link to="#it-blog">Blog</Link></li>
-				</ul> :
-				onePage == 'onepage5' ?
-				<ul>
-					{onepageMobileMenuHome}
-					<li><Link to="#it-about">About Us</Link></li>
-					<li><Link to="#it-testimonial">Testimonial</Link></li>
-					<li><Link to="#it-contact">Contact</Link></li>
-					<li><Link to="#it-gallery">Gallery</Link></li>
-					<li><Link to="#it-blog">Blog</Link></li>
-				</ul> :
-				<ul>
-					<li className="has-dropdown p-static">
-						<Link to="#" className={home ? "active" : ""} onClick={() => { openMobileMenu('home'); }}>
-							Home 
-							
-						</Link>
-						
-					</li>
+					 <li >{/*className="has-dropdown p-static" */}
+						<Link to="/" className={home ? "active" : ""}> {/* onClick={() => { openMobileMenu('home'); }}*/}Home</Link></li>
 					<li><Link to="/about-us">about us</Link></li>
-					<li className="has-dropdown">
-						<Link to="#" className={service ? "active" : ""} onClick={() => { openMobileMenu('service'); }}>
+					<li >{/* className="has-dropdown" */}
+						<Link to="/pages/services/Service" className={service ? "active" : ""} > {/* onClick={() => { openMobileMenu('service'); }}*/}
 							Services
 							{/* <svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.47035e-08 2.145L1.275 0.854999L4.5 4.08L7.725 0.854999L9 2.145L4.5 6.645L4.47035e-08 2.145Z" fill="#0E2A46"></path></svg> */}
 						</Link>
@@ -122,8 +117,8 @@ export default function MobileMenuItems(props) {
 							<li><Link to="/services/details">services details</Link></li>
 						</ul> */}
 					</li>
-					<li className=" ">
-						<Link to="#" className={blog ? "active" : ""} onClick={() => { openMobileMenu('blog'); }}>
+					<li >
+						<Link to="/blog" className={blog ? "active" : ""} > {/* onClick={() => { openMobileMenu('blog'); }}*/}
 							Blog
 							{/* <svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.47035e-08 2.145L1.275 0.854999L4.5 4.08L7.725 0.854999L9 2.145L4.5 6.645L4.47035e-08 2.145Z" fill="#0E2A46"></path></svg> */}
 						</Link>

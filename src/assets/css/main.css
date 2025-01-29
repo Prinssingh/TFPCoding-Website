@@ -9897,6 +9897,8 @@ input[type="color"] {
   font-weight: 700;
   color: var(--it-common-black);
 }
+
+
 @media only screen and (min-width: 992px) and (max-width: 1199px),
   only screen and (min-width: 768px) and (max-width: 991px),
   (max-width: 767px) {

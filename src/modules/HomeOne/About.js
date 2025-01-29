@@ -45,7 +45,7 @@ export default function About() {
 							</div>
 							<div className="it-about-text pb-10">
 								<p> TFPCoding bridges the gap between academic learning and real-world application. Our goal is to empower students with hands-on coding experience, practical problem-solving abilities, and in-demand technologies.</p>
-									<p>Suspendisse ultrice gravida dictum fusce placerat ultricies integer quis auctor elit sed vulputate mi sit.</p>
+								
 									<p>Join us, and let’s code the future together!</p>
 							</div>
 							<div className="it-about-content-wrapper d-flex align-items-center justify-content-between pb-15">

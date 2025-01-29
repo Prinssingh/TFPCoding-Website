@@ -32,25 +32,25 @@ export default function SingleCourse( props ) {
 				</div>
 				<h4 className="it-course-title pb-5">
 					<a href={`/course/${Slug ? Slug : 'details'}`}>
-						{Title ? Title : 'It statistics data science and Business analysis'}
+						{Title ? Title : 'Course Title'}
 					</a>
 				</h4>
 				<div className="it-course-info pb-15 mb-25 d-flex justify-content-between">
-					<span><i className="fa-light fa-file-invoice"></i>Lesson {lessonCount ? lessonCount : '10'}</span>
-					<span><i className="fa-sharp fa-regular fa-clock"></i>{Duration ? Duration : '19h 30m'}</span>
-					<span><i className="fa-light fa-user"></i>Students {studentCount ? studentCount : '20'}+</span>
+					<span><i className="fa-light fa-file-invoice"></i>Lesson {lessonCount ? lessonCount : '100+'}</span>
+					<span><i className="fa-sharp fa-regular fa-clock"></i>{Duration ? Duration : '50h 30m'}</span>
+					<span><i className="fa-light fa-user"></i>Students {studentCount ? studentCount : '100+'}+</span>
 				</div>
-				{/* <div className="it-course-author pb-15">
-					<img src="/img/course/avata-1.png" width={30} height={30} alt="" />
-					<span>By <i>{Author ? Author : 'Angela'}</i> in <i>{Category ? Category : 'Development'}</i></span>
-				</div> */}
+				<div className="it-course-author pb-15">
+					<img src ={Author=="Prins Singh" ?"/img/avatar/prins.png" :"/img/avatar/shubham.png" } width={30} height={30} alt="" />
+					<span>By <i>{Author ? Author : 'Prins Singh'}</i> in <i>{Category ? Category : 'Development'}</i></span>
+				</div> 
 				{/* <div className="it-course-price-box d-flex justify-content-between">
 					<span><i>${Price ? Price : '60'}</i> ${prevPrice ? prevPrice : '120'}</span>
 					<button onClick={() => handleCart(ID)}>
 						<i className="fa-light fa-cart-shopping"></i>
 						{btnText ? btnText : 'Add to cart'}
 					</button>
-				</div> */}
+				</div>  */}
 			</div>
 		</div>
 	)

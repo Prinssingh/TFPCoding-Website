@@ -7,28 +7,28 @@
        
        const counters = [
            {
-               countNum: 3,
+               countNum: 100,
                countTitle: 'Successfully Trained',
                countIcon: 'flaticon-teacher',
-               postfix: 'k+'
+               postfix: '+'
            },
            {
-               countNum: 15,
+               countNum: 50,
                countTitle: 'Classes Completed',
                countIcon: 'flaticon-completed-task',
-               postfix: 'k+'
+               postfix: '+'
            },
            {
-               countNum: 97,
+               countNum: 96,
                countTitle: 'Satisfaction Rate',
                countIcon: 'flaticon-customer-review',
                postfix: '%'
            },
            {
-               countNum: 102,
+               countNum: 15,
                countTitle: 'Students Community',
                countIcon: 'flaticon-class',
-               postfix: 'k+'
+               postfix: '+'
            }
        ];
 

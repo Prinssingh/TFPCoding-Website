@@ -15,9 +15,9 @@ export default function SingleService( props ) {
 			</div>
 			<div className="it-category-text">
 				<h4 className="it-category-title">
-					<Link to={`/services/${Slug}`}>{Title ? Title : 'Web Design'}</Link>
+					<Link to={`/services`}>{Title ? Title : 'Service Name'}</Link>
 				</h4>
-				<Link to={`/course${Slug ? '?category=' + Slug : ''}`}>
+				<Link to={`/course`}>
 					{courseCount ? courseCount : '25'} Courses
 					<span>
 						<svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">

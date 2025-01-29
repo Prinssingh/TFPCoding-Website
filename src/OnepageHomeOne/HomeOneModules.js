@@ -25,7 +25,7 @@ export default function HomeOneModules() {
       <Service />
       <Funfact />
       <Testimonial />
-      <Team />
+      {/* <Team /> */}
       <Career />
       <Blog />
       <Newsletter />

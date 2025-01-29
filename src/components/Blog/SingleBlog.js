@@ -15,12 +15,9 @@ export default function SingleBlog( props ) {
 				<div className="it-blog-meta pb-15">
 					<span>
 						<i className="fa-solid fa-calendar-days"></i>
-						{publishedDate ? publishedDate : '20 Jan 2021'}
+						{publishedDate ? publishedDate : '20 Jan 2022'}
 					</span>
-					<span>
-						<i className="fa-light fa-messages"></i>
-						Comment ({commentCount ? commentCount : '2'})
-					</span>
+					
 				</div>
 				<h4 className="it-blog-title">
 					<Link to={`/blog/${Slug ? Slug : 'details'}`}>{Title ? Title : 'velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat'}</Link>

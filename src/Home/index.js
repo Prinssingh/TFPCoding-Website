@@ -5,6 +5,7 @@ import Header from "../components/Header/Header";
 import Preloader from "../components/Preloader/Preloader";
 import Footer from "../components/Footer";
 
+
 const HomeOneModules =lazy(() =>
   import("../OnepageHomeOne/HomeOneModules")
 );
@@ -16,7 +17,7 @@ export default function Home() {
       <Suspense fallback={<Preloader />}>
         <HomeOneModules />
       </Suspense>
-      <Footer />
+      <Footer footerLogo ="/img/logo/tfp_logo_white.png"/>
     </main>
   );
 }

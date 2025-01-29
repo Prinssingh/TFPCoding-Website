@@ -38,12 +38,13 @@ export default function Course() {
 						Courses.map((course) => {
 							return (
 								<div className="col-xl-4 col-lg-4 col-md-6 mb-30">
+									{console.log(course)}
 									<SingleCourse 
 										ID={course.id}
 										Slug={course.slug}
 										Title={course.title}
-										Img={course.img}
-										category={course.category}
+										Img={course.image}
+										Category={course.category}
 										ratingCount={course.ratingCount} 
 										lessonCount={course.lessonCount}
 										studentCount={course.studentCount}

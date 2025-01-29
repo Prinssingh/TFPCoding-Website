@@ -5,8 +5,8 @@ export default function BlogDetailsArea({item}) {
 	if (!item) {
 		return <div>Loading...</div>;
 	}
-	const { image, detailsImg, title, publishedDate, commentCount, author } = item;
-
+	const { detailsImg, title, publishedDate, author ,details,blogQuote,description} = item;
+	  
 	return (
 		<div className="postbox__area pt-120 pb-120">
 			<div className="container">
@@ -19,34 +19,32 @@ export default function BlogDetailsArea({item}) {
 								</div>
 								<div className="postbox__details-title-box pb-40">
 									<div className="postbox__meta">
-										<span><i className="fa-solid fa-calendar-days"></i>{publishedDate ? publishedDate : "14 June 2023"}</span>
-										<span><i className="fa-regular fa-comments"></i>Comment ({commentCount ? commentCount : "06"})</span>
+										<span><i className="fa-solid fa-calendar-days"></i>{publishedDate ? publishedDate : "1 June 2022"}</span>
+										{/* <span><i className="fa-regular fa-comments"></i>Comment ({commentCount ? commentCount : "06"})</span> */}
 									</div>
-									<h4 className="postbox__title mb-20">{title ? title : "Pellentesque dignissim enim sit amet venenatis cursus eget nunc"}</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor in reprehenderit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor in reprehenderit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor in reprehenderit.</p>
+									<h4 className="postbox__title mb-20">{title ? title : "Blog Title"}</h4>
+			
 								</div>
+
+
+								
 								<div className="postbox__content pb-20">
-									<div className="postbox__content-img mb-40 d-flex justify-content-between">
-										<img src="/img/blog/blog-details-2.jpg" alt="" width={407} height={275} />
-										<img src="/img/blog/blog-details-3.jpg" alt="" width={407} height={275} />
-									</div>
-									<div className="postbox__text">
-										<h4 className="postbox__details-title">Latest Articles Updated Daily</h4>
-										<p>With worldwide annual spend on digital advertising surpassing $325 billion,
-											it’s no surprise that different approaches to online marketing are becoming
-											available. One of these new approaches is performance marketing or digital
-											performance marketing. Keep reading to learn all about performance marketing
-										</p>
+									<div className="postbox__text"  dangerouslySetInnerHTML={{ __html: details }}>
 									</div>
 								</div>
+
+
+
+
+
+
 								<div className="postbox__item text-center">
 									<i className="fas fa-quote-right"></i>
-									<p>Diam luctus nostra dapibus varius et semper semper rutrum ad risus felis
-										eros. Cursus libero viverra tempus netus diam vestibulum</p>
-									<span>{author ? author : "David Backhum"}</span>
+									<p>{blogQuote}</p>
+									<span style={{color:"#0ab99d", fontSize:"larger", fontWeight:"bolder"}}>{author ? author : "TFP Developers"}</span>
 								</div>
+
+
 								<div className="postbox__details-share-wrapper">
 									<div className="row align-items-center">
 										<div className="col-xl-7 col-lg-7 col-md-7">
@@ -67,7 +65,7 @@ export default function BlogDetailsArea({item}) {
 										</div>
 									</div>
 								</div>
-								<div className="postbox__comment">
+								{/* <div className="postbox__comment">
 									<h3 className="postbox__comment-title">01 Comments</h3>
 									<ul>
 										<li>
@@ -90,7 +88,7 @@ export default function BlogDetailsArea({item}) {
 											</div>
 										</li>
 									</ul>
-								</div>
+								</div> */}
 								<div className="postbox__content-wrap">
 									<div className="it-contact__wrap">
 										<div className="it-contact__text pb-30">

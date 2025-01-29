@@ -10,7 +10,7 @@ export default function Video() {
 
 		<div className="it-video-area it-video-bg p-relative fix pt-100 pb-95" data-background="src/img/video/bg-1-1.jpg">
 			{/* <img src="/img/video/bg-1-1.jpg" layout="fill" objectFit="cover" alt="" /> */}
-			<ModalVideo channel='youtube' isOpen={isOpen} videoId='8U7eAsAd_R8~' onClose={() => { openModal(); }} />
+			<ModalVideo channel='youtube' isOpen={isOpen} videoId='8U7eAsAd_R8' onClose={() => { openModal(); }} autoplay/>
 			<div className="it-video-shape-1 d-none d-lg-block">
 				<img src="/img/video/shape-1-1.png" width={347} height={211} alt="" />
 			</div>
@@ -32,7 +32,7 @@ export default function Video() {
 					<div className="col-xl-7 col-lg-7 col-md-9 col-sm-9">
 						<div className="it-video-content">
 							<span>Join Our New Course's</span>
-							<h3 className="it-video-title">Call To Enroll Your Child <br /> <a href="tel:+91 9074644022" className='text-white'>+91 9074644022</a></h3>    
+							<h3 className="it-video-title">Call To Enroll Your Self / Child <br /> <a href="tel:+91 9074644022" className='text-white'>+91 9074644022</a></h3>    
 							<div className="it-video-button">
 								<Link className="it-btn" to="/contact">
 									<span>
