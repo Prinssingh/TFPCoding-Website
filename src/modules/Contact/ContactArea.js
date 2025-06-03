@@ -109,7 +109,7 @@ export default function ContactArea() {
 												</div>
 												<div className="it-contact__text">
 												<span>Our Address</span>
-												<Link to="#">Behind BJP Office Bharahut Nagar Satna, Madhya Pradesh, India</Link> 
+												<Link to="#">3rd Floor, RS tower, Circuit House Sq., Satna, Madhya Pradesh, India</Link> 
 												</div>
 											</div>
 										</li>

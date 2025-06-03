@@ -115,7 +115,7 @@ export default function FservicesHeader({ menuFormat, isLoggedIn, email }) {
                               />
                             </svg>
                           </span>
-                          <div style={{marginTop:"8px"}}>Behind BJP Office Bharahut Nagar Satna(M.P.)</div>
+                          <div style={{marginTop:"8px"}}>3rd Floor, RS tower, Circuit House Sq., Satna, (M.P.)</div>
                         </a>
                       </li>
 
@@ -344,7 +344,7 @@ export default function FservicesHeader({ menuFormat, isLoggedIn, email }) {
                   to="htits://www.google.com/maps/@37.4801311,22.8928877,3z"
                   target="_blank"
                 >
-                  Behind BJP Office Bharahut Nagar Satna(M.P.){" "}
+                  3rd Floor, RS tower, Circuit House Sq., Satna,(M.P.){" "}
                 </Link>
               </div>
             </div>
